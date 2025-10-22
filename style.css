@@ -1,0 +1,536 @@
+*{
+margin: 0;
+
+padding: 0;
+
+box-sizing: border-box;
+font-family:'Bebas Neue', sans-serif;
+
+color: #BFC7D5;
+ 
+    
+
+}
+
+html, body{
+    height: 100%;
+    width: 100%;
+}
+
+
+#nav{
+  height: 120px;
+  width: 100%;
+
+display: flex;
+align-items: center;
+justify-content: flex-start;
+gap: 75px;
+padding: 0  100px;
+
+position: fixed;
+z-index: 999;
+}
+
+#cursor{
+  height: 30px;
+  width: 30px;
+  background: linear-gradient(45deg, #7a0000, #a10000, #500000);
+border-radius: 50%;
+  position: fixed;
+  z-index: 99;
+
+}
+#cursor-blur{
+  height: 400px;
+  width: 400px;
+ background: radial-gradient(circle, rgba(120, 0, 0, 0.5), rgba(60, 0, 0, 0.2));
+border-radius: 50%;
+position: fixed;
+  filter: blur(50px);
+  z-index: 9;
+   mix-blend-mode: lighten;
+}
+
+#nav img{
+
+height: 100px;
+border-radius: 200px;
+}
+#nav h4{
+    font-size: 25px;
+    font-weight: 900;
+}
+
+video{
+ 
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+    position: fixed;
+    z-index: -3;
+
+
+}
+
+#main{
+
+position: relative;
+background: linear-gradient(
+  to bottom right, 
+  rgba(51, 0, 0, 0.9),   /* 0.6 = 60% opacity */
+  rgba(102, 0, 0, 0.1),
+  rgba(153, 0, 0, 0.3)
+);
+
+
+}
+
+#page1{
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+  
+  z-index: 10;
+ 
+}
+
+
+#page1 h1{
+    font-size: 145px;
+    font-weight: 900;
+    position: relative;
+ text-shadow: 0 0 20px rgba(255, 50, 50, 0.6);
+   
+}
+
+#page1 h1::before{
+
+  content: "The Viltrum Empire";
+  position: absolute;
+ color: #b30000;
+  top: -3px;
+  left: -3px;
+  
+  -webkit-text-stroke:4px  #d9d9d9;
+
+
+z-index: -1;
+
+}
+#page1 h2{
+    font-size: 40px;
+    font-weight: 900;
+    margin-top: -15px;
+    margin-bottom: 10px;
+}
+#page1 p{
+font-size: 18px;
+  width: 40%;
+margin-left: 60px;
+  font-weight: 600;
+}
+#page1 #arrow-1{
+  height: 250px;
+  width: 250px;
+  position: absolute;
+    display: flex;
+   align-items: center;
+  justify-content: center;
+    left: -2%;
+  bottom: 0%;
+border: 2px solid #c0c0c0; /* silver, cosmic feel */
+/* bright red, intense */
+box-shadow: 0 0 10px  #c0c0c0;
+    border-radius: 50%;
+    transition: all ease 1s;
+
+}
+#page1 #arrow-1 i {
+  font-size: 50px;
+  font-weight: 100;
+}
+#page1 #arrow-1:hover {
+  scale: 0.4;
+  background: linear-gradient(135deg, #4b0000, #800000); /* dark crimson gradient */
+
+}
+#page2 {
+  min-height: 100vh;
+  width: 100%;
+position: relative;
+z-index: 10;
+}
+
+#scroller{
+margin-top: 100px;
+white-space: nowrap;
+
+overflow-x: auto;
+overflow-y: hidden;
+ position: relative;
+  z-index: 10;
+}
+
+#scroller::-webkit-scrollbar {
+  display: none;
+}
+
+#scroller-in{
+  white-space: nowrap;
+display: inline-block;
+
+ 
+}
+#scroller h4{
+margin-right: 16px;
+display: inline-block;
+font-size: 90px;
+    color: transparent;
+  -webkit-text-stroke: 2px #ff1a1a;
+  transition: all linear 0.5s; 
+
+font-weight: 900;
+ 
+}
+
+#scroller h4:hover{
+    color: #ff1a1a;
+    cursor: pointer;
+    
+}
+#about-us{
+  margin-top: 17%;
+height: 40vh;
+width: 100%;
+display: flex;
+justify-content: space-around;
+align-items: center;
+padding: 0  30px;
+
+position: relative;
+z-index: 10;
+ margin-bottom: 6%;
+
+
+}
+#about-us #img-1{
+
+
+  height: 200px;
+  border-radius: 40%;
+  width: 220px;
+  object-fit:cover  ;
+object-position: 50% 28%; ;  
+}
+#about-us #img-2{
+
+
+  height: 200px;
+  border-radius: 40%;
+  width: 220px;
+  object-fit:cover  ;
+object-position: 20% 1%; 
+}
+
+#about-us-in{
+  width: 40%;
+text-align: center;
+
+}
+
+#about-us-in h3{
+  font-size: 50px;
+  font-weight: 900;
+margin-bottom: 20px;
+}
+#about-us-in p{
+   
+  font-size: 18px;
+    font-weight: 600;
+    line-height: 1.8;
+
+
+}
+
+#card-container{
+ 
+ height: 60vh;
+
+ display: flex;
+ align-items: center;
+ justify-content: space-evenly;
+ gap: 60px;
+ position: relative;
+  z-index: 10;
+} 
+
+
+.card{
+height: 80%;
+width: 22%;
+
+border-radius: 25px;
+    background: linear-gradient(145deg, #660000, #990000);
+
+background-size: cover;
+
+
+  background-position: center; /* 👈 ye line sabse important hai */
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+      transform-style: preserve-3d;
+
+        box-shadow: 0 15px 25px rgba(0, 0, 0, 0.3);
+        position: relative;
+}
+
+#card1{
+
+background-image: url(https://i.pinimg.com/736x/ae/16/c8/ae16c8160448c5d77f605609f83ac702.jpg);
+background-position: 50% 80%;
+
+}
+
+#card2{
+background-image: url(https://i.pinimg.com/1200x/47/b3/b1/47b3b1cff5e7632e78fc7566831a743b.jpg);
+background-position: 50% 94%;
+
+}
+
+#card3{
+background-image: url(https://i.pinimg.com/1200x/ec/a6/b2/eca6b2956c8cc3a571b214869050f6dc.jpg);
+background-position: 50% 10%;
+
+}
+
+.overlay{
+
+   height: 100%;
+  width: 100%;
+  background-color: rgba(165, 42, 42, 0.85);
+  border-radius: 25px;
+  padding: 50px;
+  padding-top: 100px;
+ 
+  opacity: 0;
+  transition: all ease 0.6s;
+  backdrop-filter: blur(4px);
+
+
+}
+.overlay h4{
+  font-size: 30px;
+  font-weight: 900;
+  margin-bottom: 15px;
+  color: #500000;
+ 
+}
+
+.overlay p{
+  font-size: 18px;
+  font-weight: 500;
+    line-height: 1.6;
+    color:  #300000;
+}
+
+ .card:hover .overlay {
+      opacity: 1;
+    }
+ 
+
+    
+    #green-div{
+ background: rgba(0,0,0,0.6);
+  border: 1px solid rgba(255, 26, 26, 0.6); 
+  box-shadow: 0 0 20px rgba(255, 26, 26, 0.4);
+  color: #fff;
+  backdrop-filter: blur(5px);
+     height:  30vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    }
+
+    #green-div img{
+      height:  100%;
+      object-fit: cover;
+      width: 16%;
+    }
+
+    #green-div h4{
+      width: 30%;
+      font-size: 40px;
+      font-weight: 900;
+      text-transform: uppercase;
+      text-align: center;
+   
+    }  
+#page3{
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 10;
+}
+
+#page3>p{
+  font-size: 30px;
+  font-weight: 700;
+  width: 60%;
+  text-align: center;
+  line-height: 1.8;
+}
+
+#page3 img{
+  height: 100px;
+  width: 100px;
+ position: absolute;
+}
+
+#page3 #bicep1{
+  top: 26%;
+  left: 15%;
+  
+ 
+}
+#page3 #bicep2{
+  bottom: 29%;
+  right: 18%;
+}
+#page4{
+height: 30vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 70px;
+
+  position: relative;
+}
+
+.el{
+ height: 70%;
+ width: 30%;
+  overflow: hidden;
+  border-radius: 20px;
+    position: relative;
+     background-color: rgba(82, 4, 4, 0.623);
+}
+
+.el h2 {
+  height: 100%;
+  width: 100%;
+  background-color: rgba(82, 4, 4, 0.623);
+  display: flex;
+color: #d9d9d9;
+  font-weight: 800;
+  align-items: center;
+  justify-content: center;
+  transition: all ease 0.5s;
+  font-size: 2vw;
+   position: absolute;
+   z-index: 10;
+ 
+}
+.el img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  transition: all ease 0.5s;
+  scale: 1.2;
+ 
+}
+.el:hover h2 {
+ 
+  background-color: transparent;
+}
+.el:hover img {
+  scale: 1;
+}
+#page4 h1 {
+  font-size: 6.4vw;
+position: absolute;
+  top: -20%;
+  font-weight: 900;
+  -webkit-text-stroke: 2px #ffffff;
+}
+
+footer{
+
+   height: 35vh;
+   width: 100%;
+color: #fff;  
+     background: linear-gradient(135deg, #1a0000, #4b0000); 
+  position: relative;
+     display: flex;
+     align-items: center;
+     justify-content: flex-start;
+    gap: 9.5vw;
+      padding: 0 100px;
+}
+
+footer #photo1{
+
+ width: 250px;
+  border-radius: 200px;
+  height: 250px;
+ display: block;
+  position: absolute;
+  left:0;
+ 
+  object-fit: cover;
+
+}
+
+footer #photo2{
+
+  width: 250px;
+  border-radius: 200px;
+  height: 250px;
+
+  position: absolute;
+  right: 0;
+}
+#f1,
+#f2,
+#f3,
+#f4 {
+  width: fit-content;
+  position: relative;
+  margin-left: 50px;
+   z-index: 99;
+}
+
+#f2 h3 {
+  font-size: 1.6vw;
+  white-space: nowrap;
+
+  font-weight: 900;
+  margin-bottom: 8px;
+}
+#f3 h3 {
+  font-size: 1.6vw;
+  white-space: nowrap;
+  text-transform: uppercase;
+
+  font-weight: 800;
+  margin-bottom: 8px;
+  margin-left: 50px;
+}
+#f4 h4 {
+  font-size: 1.5vw;
+
+  text-transform: uppercase;
+
+  font-weight: 600;
+  line-height: 30px;
+  margin-bottom: 8px;
+  margin-left: 100px;
+}
+
