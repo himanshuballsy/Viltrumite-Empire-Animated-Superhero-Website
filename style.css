@@ -273,19 +273,16 @@ margin-bottom: 20px;
 .card{
 height: 80%;
 width: 22%;
-
 border-radius: 25px;
-    background: linear-gradient(145deg, #660000, #990000);
-
+background: linear-gradient(145deg, #660000, #990000);
 background-size: cover;
+background-position: center; /* 👈 ye line sabse important hai */
+transition: transform 0.2s ease, box-shadow 0.2s ease;
+box-shadow: 0 15px 25px rgba(0, 0, 0, 0.3);
+transform-style: preserve-3d;
+position: relative;
 
 
-  background-position: center; /* 👈 ye line sabse important hai */
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-      transform-style: preserve-3d;
-
-        box-shadow: 0 15px 25px rgba(0, 0, 0, 0.3);
-        position: relative;
 }
 
 #card1{
@@ -314,8 +311,7 @@ background-position: 50% 10%;
   background-color: rgba(165, 42, 42, 0.85);
   border-radius: 25px;
   padding: 50px;
-  padding-top: 100px;
- 
+
   opacity: 0;
   transition: all ease 0.6s;
   backdrop-filter: blur(4px);
