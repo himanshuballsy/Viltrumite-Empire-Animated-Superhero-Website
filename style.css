@@ -129,7 +129,7 @@ z-index: -1;
     margin-bottom: 10px;
 }
 #page1 p{
-font-size: 18px;
+font-size: 25px;
   width: 40%;
 margin-left: 60px;
   font-weight: 600;
@@ -250,7 +250,7 @@ margin-bottom: 20px;
 }
 #about-us-in p{
    
-  font-size: 18px;
+  font-size: 25px;
     font-weight: 600;
     line-height: 1.8;
 
@@ -311,19 +311,15 @@ background-position: 50% 10%;
   background-color: rgba(165, 42, 42, 0.85);
   border-radius: 25px;
   padding: 50px;
-
   opacity: 0;
   transition: all ease 0.6s;
   backdrop-filter: blur(4px);
-
-
 }
 .overlay h4{
   font-size: 30px;
   font-weight: 900;
   margin-bottom: 15px;
   color: #500000;
- 
 }
 
 .overlay p{
@@ -363,7 +359,6 @@ background-position: 50% 10%;
       font-weight: 900;
       text-transform: uppercase;
       text-align: center;
-   
     }  
 #page3{
   height: 100vh;
@@ -390,14 +385,14 @@ background-position: 50% 10%;
 }
 
 #page3 #bicep1{
-  top: 26%;
-  left: 15%;
+  top: 28%;
+  left: 16%;
   
- 
 }
 #page3 #bicep2{
-  bottom: 29%;
+  bottom: 35%;
   right: 18%;
+    transform: scaleX(-1);
 }
 #page4{
 height: 30vh;
