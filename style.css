@@ -525,3 +525,138 @@ footer #photo2{
   margin-left: 100px;
 }
 
+
+/* 📱 Mobile Responsive Design */
+@media (max-width: 768px) {
+
+  /* Navigation */
+  #nav {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  #nav img {
+    width: 80px;
+    height: 80px;
+  }
+
+  #nav h4 {
+    font-size: 16px;
+  }
+
+  /* Video background */
+  video {
+    object-fit: cover;
+    height: 40vh;
+  }
+
+  /* Page 1 Text */
+  #page1 h1 {
+    font-size: 24px;
+    text-align: center;
+  }
+
+  #page1 h2 {
+    font-size: 18px;
+    text-align: center;
+  }
+
+  #page1 p {
+    width: 90%;
+    font-size: 14px;
+    text-align: center;
+  }
+
+  /* About Us Section */
+  #about-us {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  #about-us img {
+    width: 80%;
+    margin-bottom: 10px;
+  }
+
+  #about-us-in {
+    width: 90%;
+  }
+
+  /* Cards */
+  #card-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    width: 80%;
+    height: auto;
+    margin-bottom: 20px;
+  }
+
+  /* Green Div */
+  #green-div {
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+  }
+
+  #green-div img {
+    width: 50px;
+  }
+
+  #green-div h4 {
+    font-size: 16px;
+  }
+
+  /* Page 3 */
+  #page3 p {
+    width: 90%;
+    font-size: 14px;
+    text-align: center;
+  }
+
+  #page3 img {
+    width: 80px;
+  }
+
+  /* Page 4 */
+  #page4 {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #page4 h1 {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .el {
+    width: 80%;
+    margin-bottom: 20px;
+  }
+
+  .el img {
+    width: 100%;
+    height: auto;
+  }
+
+  /* Footer */
+  footer {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  footer img {
+    width: 100px;
+  }
+
+  footer h3, footer h4 {
+    font-size: 14px;
+  }
+}
+
+
