@@ -385,13 +385,13 @@ background-position: 50% 10%;
 }
 
 #page3 #bicep1{
-  top: 28%;
-  left: 16%;
+  top: 20%;
+  left: 10%;
   
 }
 #page3 #bicep2{
   bottom: 35%;
-  right: 18%;
+  right: 10%;
     transform: scaleX(-1);
 }
 #page4{
