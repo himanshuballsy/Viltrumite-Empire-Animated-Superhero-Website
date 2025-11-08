@@ -70,7 +70,7 @@ video{
     position: fixed;
     z-index: -3;
 
-    object-fit: contain;
+    object-fit: cover;
     object-position: center;
   
 
@@ -725,6 +725,26 @@ footer #photo2{
 
 @media (max-width: 768px) {
   
+  /* Video - mobile pe better fit with overflow hidden */
+  video {
+    object-fit: cover;
+    object-position: center;
+    width: 100vw;
+    height: 100vh;
+   
+  }
+
+  /* Body overflow hidden for mobile */
+  body {
+    overflow-x: hidden;
+    max-width: 100vw;
+  }
+
+  html {
+    overflow-x: hidden;
+    max-width: 100vw;
+  }
+
   /* Navigation */
   #nav {
     height: 70px;
@@ -739,11 +759,6 @@ footer #photo2{
 
   #nav h4 {
     font-size: 14px;
-  }
-
-  /* Video */
-  video {
-    object-fit: cover;
   }
 
   /* Page 1 */
