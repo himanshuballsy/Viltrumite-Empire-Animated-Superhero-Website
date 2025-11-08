@@ -529,137 +529,414 @@ footer #photo2{
 }
 
 
-/* 📱 Mobile Responsive Design */
-@media (max-width: 768px) {
-
+/* 📱 Mobile & Tablet Responsive Design */
+@media (max-width: 1024px) {
+  
   /* Navigation */
   #nav {
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
+    height: 80px;
+    gap: 30px;
+    padding: 0 30px;
+    justify-content: center;
   }
 
   #nav img {
-    width: 80px;
-    height: 80px;
+    height: 60px;
   }
 
   #nav h4 {
-    font-size: 16px;
+    font-size: 18px;
   }
 
-  /* Video background */
-  video {
-    object-fit: cover;
-    height: 40vh;
-  }
-
-  /* Page 1 Text */
+  /* Page 1 */
   #page1 h1 {
-    font-size: 24px;
-    text-align: center;
+    font-size: 80px;
   }
 
   #page1 h2 {
-    font-size: 18px;
-    text-align: center;
+    font-size: 30px;
   }
 
   #page1 p {
-    width: 90%;
-    font-size: 14px;
+    width: 70%;
+    font-size: 20px;
+    margin-left: 0;
     text-align: center;
   }
 
-  /* About Us Section */
+  #page1 #arrow-1 {
+    height: 150px;
+    width: 150px;
+    left: 5%;
+    bottom: 5%;
+  }
+
+  #page1 #arrow-1 i {
+    font-size: 35px;
+  }
+
+  /* Scroller */
+  #scroller h4 {
+    font-size: 60px;
+  }
+
+  /* About Us */
   #about-us {
     flex-direction: column;
-    align-items: center;
+    height: auto;
+    gap: 30px;
+    margin-top: 10%;
+    margin-bottom: 10%;
+  }
+
+  #about-us #img-1,
+  #about-us #img-2 {
+    height: 150px;
+    width: 150px;
+  }
+
+  #about-us-in {
+    width: 80%;
+  }
+
+  #about-us-in h3 {
+    font-size: 35px;
+  }
+
+  #about-us-in p {
+    font-size: 18px;
+  }
+
+  /* Cards */
+  #card-container {
+    height: auto;
+    flex-direction: column;
+    gap: 30px;
+    padding: 30px 0;
+  }
+
+  .card {
+    width: 80%;
+    height: 400px;
+  }
+
+  .overlay {
+    padding: 30px;
+  }
+
+  .overlay h4 {
+    font-size: 25px;
+  }
+
+  .overlay p {
+    font-size: 16px;
+  }
+
+  /* Green Div */
+  #green-div {
+    height: auto;
+    flex-direction: column;
+    padding: 20px;
+    gap: 15px;
+  }
+
+  #green-div img {
+    width: 40%;
+    height: auto;
+  }
+
+  #green-div h4 {
+    width: 80%;
+    font-size: 28px;
+  }
+
+  /* Page 3 */
+  #page3 > p {
+    width: 80%;
+    font-size: 22px;
+  }
+
+  #page3 img {
+    height: 70px;
+    width: 70px;
+  }
+
+  #page3 #bicep1 {
+    top: 15%;
+    left: 5%;
+  }
+
+  #page3 #bicep2 {
+    bottom: 25%;
+    right: 5%;
+  }
+
+  /* Page 4 */
+  #page4 {
+    height: auto;
+    flex-direction: column;
+    gap: 30px;
+    padding: 60px 0;
+  }
+
+  .el {
+    width: 80%;
+    height: 250px;
+  }
+
+  .el h2 {
+    font-size: 5vw;
+  }
+
+  #page4 h1 {
+    font-size: 10vw;
+    top: -10%;
+  }
+
+  /* Footer */
+  footer {
+    height: auto;
+    flex-direction: column;
+    gap: 20px;
+    padding: 40px 20px;
+  }
+
+  footer #photo1,
+  footer #photo2 {
+    width: 150px;
+    height: 150px;
+    position: relative;
+  }
+
+  #f1, #f2, #f3, #f4 {
+    margin-left: 0;
     text-align: center;
   }
 
-  #about-us img {
-    width: 80%;
-    margin-bottom: 10px;
+  #f2 h3,
+  #f3 h3,
+  #f4 h4 {
+    font-size: 3vw;
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  
+  /* Navigation */
+  #nav {
+    height: 70px;
+    gap: 20px;
+    padding: 0 20px;
+    flex-wrap: wrap;
+  }
+
+  #nav img {
+    height: 50px;
+  }
+
+  #nav h4 {
+    font-size: 14px;
+  }
+
+  /* Video */
+  video {
+    object-fit: cover;
+  }
+
+  /* Page 1 */
+  #page1 h1 {
+    font-size: 50px;
+  }
+
+  #page1 h1::before {
+    -webkit-text-stroke: 2px #d9d9d9;
+  }
+
+  #page1 h2 {
+    font-size: 22px;
+  }
+
+  #page1 p {
+    width: 85%;
+    font-size: 16px;
+  }
+
+  #page1 #arrow-1 {
+    height: 100px;
+    width: 100px;
+    left: 50%;
+    bottom: 5%;
+    transform: translateX(-50%);
+  }
+
+  #page1 #arrow-1 i {
+    font-size: 25px;
+  }
+
+  /* Scroller */
+  #scroller {
+    margin-top: 50px;
+  }
+
+  #scroller h4 {
+    font-size: 40px;
+  }
+
+  /* About Us */
+  #about-us {
+    margin-top: 15%;
+    padding: 0 20px;
+  }
+
+  #about-us #img-1,
+  #about-us #img-2 {
+    height: 120px;
+    width: 120px;
   }
 
   #about-us-in {
     width: 90%;
   }
 
-  /* Cards */
-  #card-container {
-    flex-direction: column;
-    align-items: center;
+  #about-us-in h3 {
+    font-size: 28px;
   }
 
-  .card {
-    width: 80%;
-    height: auto;
-    margin-bottom: 20px;
-  }
-
-  /* Green Div */
-  #green-div {
-    flex-direction: column;
-    text-align: center;
-    gap: 10px;
-  }
-
-  #green-div img {
-    width: 50px;
-  }
-
-  #green-div h4 {
+  #about-us-in p {
     font-size: 16px;
   }
 
-  /* Page 3 */
-  #page3 p {
+  /* Cards */
+  .card {
     width: 90%;
+    height: 350px;
+  }
+
+  .overlay {
+    padding: 20px;
+  }
+
+  .overlay h4 {
+    font-size: 22px;
+  }
+
+  .overlay p {
     font-size: 14px;
-    text-align: center;
+  }
+
+  /* Green Div */
+  #green-div img {
+    width: 50%;
+  }
+
+  #green-div h4 {
+    width: 90%;
+    font-size: 22px;
+  }
+
+  /* Page 3 */
+  #page3 > p {
+    width: 90%;
+    font-size: 18px;
   }
 
   #page3 img {
-    width: 80px;
+    height: 60px;
+    width: 60px;
   }
 
   /* Page 4 */
-  #page4 {
-    flex-direction: column;
-    align-items: center;
+  .el {
+    width: 90%;
+    height: 200px;
+  }
+
+  .el h2 {
+    font-size: 6vw;
   }
 
   #page4 h1 {
-    font-size: 20px;
-    text-align: center;
-  }
-
-  .el {
-    width: 80%;
-    margin-bottom: 20px;
-  }
-
-  .el img {
-    width: 100%;
-    height: auto;
+    font-size: 12vw;
   }
 
   /* Footer */
   footer {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
+    padding: 30px 15px;
   }
 
-  footer img {
-    width: 100px;
+  footer #photo1,
+  footer #photo2 {
+    width: 120px;
+    height: 120px;
   }
 
-  footer h3, footer h4 {
-    font-size: 14px;
+  #f2 h3,
+  #f3 h3,
+  #f4 h4 {
+    font-size: 4vw;
   }
 }
 
+@media (max-width: 480px) {
+  
+  /* Page 1 */
+  #page1 h1 {
+    font-size: 35px;
+  }
 
+  #page1 h2 {
+    font-size: 18px;
+  }
+
+  #page1 p {
+    font-size: 14px;
+  }
+
+  /* Scroller */
+  #scroller h4 {
+    font-size: 30px;
+  }
+
+  /* About Us */
+  #about-us-in h3 {
+    font-size: 24px;
+  }
+
+  #about-us-in p {
+    font-size: 14px;
+  }
+
+  /* Cards */
+  .card {
+    height: 300px;
+  }
+
+  /* Green Div */
+  #green-div h4 {
+    font-size: 18px;
+  }
+
+  /* Page 3 */
+  #page3 > p {
+    font-size: 16px;
+  }
+
+  #page3 img {
+    height: 50px;
+    width: 50px;
+  }
+
+  /* Footer */
+  footer #photo1,
+  footer #photo2 {
+    width: 100px;
+    height: 100px;
+  }
+
+  #f2 h3,
+  #f3 h3,
+  #f4 h4 {
+    font-size: 5vw;
+  }
+}
