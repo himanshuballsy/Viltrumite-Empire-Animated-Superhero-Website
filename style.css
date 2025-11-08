@@ -747,6 +747,8 @@ footer #photo2{
   /* Page 1 */
   #page1 h1 {
     font-size: 50px;
+    line-height: 1.2;
+    margin-bottom: 15px;
   }
 
   #page1 h1::before {
@@ -755,11 +757,14 @@ footer #photo2{
 
   #page1 h2 {
     font-size: 22px;
+    margin-top: 10px;
+    margin-bottom: 15px;
   }
 
   #page1 p {
     width: 85%;
     font-size: 16px;
+    margin-top: 15px;
   }
 
   #page1 #arrow-1 {
@@ -883,14 +888,19 @@ footer #photo2{
   /* Page 1 */
   #page1 h1 {
     font-size: 35px;
+    line-height: 1.3;
+    margin-bottom: 20px;
   }
 
   #page1 h2 {
     font-size: 18px;
+    margin-top: 15px;
+    margin-bottom: 15px;
   }
 
   #page1 p {
     font-size: 14px;
+    margin-top: 20px;
   }
 
   /* Scroller */
