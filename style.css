@@ -29,7 +29,7 @@ gap: 75px;
 padding: 0  100px;
 
 position: fixed;
-z-index: 999;
+z-index: 99;
 }
 
 #cursor{
@@ -38,7 +38,7 @@ z-index: 999;
   background: linear-gradient(45deg, #7a0000, #a10000, #500000);
 border-radius: 50%;
   position: fixed;
-  z-index: 99;
+  z-index: 999;
 
 }
 #cursor-blur{
